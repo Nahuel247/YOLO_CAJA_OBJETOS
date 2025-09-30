@@ -10,17 +10,6 @@ Este repo muestra un ejemplo mínimo con **Ultralytics YOLOv8** + **OpenCV** que
 
 ---
 
-## ✨ Demo rápida
-
-- Abre una ventana llamada:  
-  **YOLO + NVIDIA Broadcast (q para salir)**
-- Dibuja cajas sobre los objetos detectados.
-- Si hay al menos una persona, muestra el texto en verde:  
-  `person: (x1,y1,x2,y2)`
-- Pulsa **q** para salir.
-
----
-
 ## 📦 Requisitos
 
 - **Python 3.9–3.11**
