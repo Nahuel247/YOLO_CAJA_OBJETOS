@@ -5,7 +5,6 @@ Muchas veces necesitamos realizar análisis sobre partes específicas de una ima
 
 Este repo muestra un ejemplo mínimo con **Ultralytics YOLOv8** + **OpenCV** que detecta personas en una cámara web y dibuja las **coordenadas (x1,y1,x2,y2)** de la primera detección en la esquina superior izquierda de la ventana.
 
-
 ---
 
 ## 📦 Requisitos
@@ -20,11 +19,13 @@ Este repo muestra un ejemplo mínimo con **Ultralytics YOLOv8** + **OpenCV** que
 - (Opcional GPU) `torch` con CUDA compatible
 
 > 💡 Si usas GPU, instala PyTorch con el wheel de CUDA adecuado (ej.: `cu121`).  
+
+```bash
 pip uninstall -y torch torchvision torchaudio
 pip cache purge
 pip install --index-url https://download.pytorch.org/whl/cu121 torch==2.4.1+cu121 torchvision==0.19.1+cu121 torchaudio==2.4.1+cu121
 
-### confirmamos uso de GPU
+
 import torch, platform
 print("PyTorch:", torch.__version__, "| Compilado con CUDA:", torch.version.cuda, "| CUDA disponible:", torch.cuda.is_available())
 if torch.cuda.is_available():
